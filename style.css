@@ -30,6 +30,57 @@ body {
 .title_SERVICE_label { color: orange; }
 .title_REPPAS_label { color: white; }
 
+/* Ο "πατέρας" των logos */
+.moto_logo {
+    display: flex;
+    flex-wrap: wrap;           /* Επιτρέπει την αλλαγή σειράς αν στενέψει πολύ η οθόνη */
+    justify-content: center;   /* Κεντράρισμα οριζόντια */
+    align-items: center;       /* Κεντράρισμα κάθετα */
+    gap: 0px;                 /* Μικρή απόσταση μεταξύ τους */
+    padding: 0px 0px 0px 0px; /* 0px στο τρίτο νούμερο για να μην έχει κενό από κάτω */
+}
+
+/* Ρύθμιση για ΟΛΕΣ τις εικόνες (Πιο μικρές τώρα) */
+.moto_logo img {
+    height: 45px;              /* Γενικό ύψος (ήταν 70) */
+    width: 100px;              /* Γενικό πλάτος (ήταν 150) */
+    object-fit: contain;       /* Διατήρηση αναλογιών */
+    transition: 0.3s;
+    display: block;
+}
+
+.honda { 
+    height: 42px !important;  /* Ανέβασέ το όσο χρειάζεται για να γεμίσει το μάτι */
+    width: auto !important;   /* Την αφήνουμε να πάρει όσο πλάτος θέλει για να μην τη "πνίγει" το 100px */
+}
+
+.kawasaki {
+    height: 85px !important; 
+    margin-left: 15px;         /* Μικρότερο margin αφού μίκρυναν τα logos */
+    margin-right: 5px;
+}
+
+.yamaha{
+    height: 45px !important;
+    margin-left:1% ;
+}
+
+.piaggio { 
+    height: 55px !important;   /* Αναλογική μείωση (ήταν 85) */
+}
+
+.voge { 
+    height: 50px !important;   /* Αναλογική μείωση (ήταν 80) */
+}
+
+/* Εφέ όταν ακουμπάς το ποντίκι */
+.moto_logo img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
 /* Cyber Card Section (Εικόνα - Κείμενο) */
 .cyber-card {
     display: flex;
@@ -148,8 +199,7 @@ body {
     color: orange;
     font-weight: bold;
     line-height: 1.9;
-    font-size: 2,90rem;
-    line-height: 1.8;          /* Αέρας ανάμεσα στις γραμμές για άνετο διάβασμα */
+    font-size: 2.90rem;
     text-align: justify;      /* Ίσιο κείμενο δεξιά και αριστερά */
     font-weight: 300;
 }
@@ -316,4 +366,20 @@ body {
     .left-col {
         width: 100%;
     }
+}
+
+
+/* Ρυθμίζουμε όλα τα p μέσα στο container */
+.info-container p {
+    font-size: 20px; /* Το 30px ήταν πολύ μεγάλο για τόσες γραμμές */
+    text-align: center;
+}
+
+/* Ειδικό στυλ για τον τίτλο και το τηλέφωνο */
+#open, #tel {
+    font-size: 30px;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 15px;
+    
 }
