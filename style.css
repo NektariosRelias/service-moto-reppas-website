@@ -50,7 +50,7 @@ body {
 }
 
 .honda { 
-    height: 42px !important;  /* Ανέβασέ το όσο χρειάζεται για να γεμίσει το μάτι */
+    height: 75px !important;  /* Ανέβασέ το όσο χρειάζεται για να γεμίσει το μάτι */
     width: auto !important;   /* Την αφήνουμε να πάρει όσο πλάτος θέλει για να μην τη "πνίγει" το 100px */
 }
 
@@ -62,7 +62,6 @@ body {
 
 .yamaha{
     height: 45px !important;
-    margin-left:1% ;
 }
 
 .piaggio { 
