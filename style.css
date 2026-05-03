@@ -323,7 +323,30 @@ body {
 
 
 
+.footer-signature {
+    clear: both;               /* Διασφαλίζει ότι δεν "μπλέκεται" με τα από πάνω */
+    width: 100%;
+    background-color: black;
+    color: #777;
+    text-align: center;         /* Τέρμα δεξιά */
+    padding: 20px 30px;        /* Αέρας για να μην κολλάει στις γωνίες */
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    display: block;            /* Να πιάνει όλη τη γραμμή μόνη της */
+}
 
+.designer-name {
+    color: orange;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .footer-signature {
+        text-align: center;    /* Στο κινητό κέντρο για να φαίνεται σωστά */
+        padding: 15px;
+    }
+}
 
 
 
